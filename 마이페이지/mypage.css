@@ -1,0 +1,13 @@
+* {margin: 0; padding: 0;}
+*, :after, :before {box-sizing:border-box;}
+html,body {height:100%;overflow-x: hidden;}
+a {text-decoration:none; color:black; margin:0;}
+a:hover{color: black;text-decoration-line: underline;}
+ul, li {list-style: none;}
+table {border-collapse:collapse;border-spacing:0}
+.my_wrap{width: 100%; height:100%;} 
+.my_nav{border-radius:8px; background-color: rgba(226, 226, 226, 0.842); width: 9%; text-align: center; position:absolute; margin:15% 0 0 20%; float: left;} 
+.my_nav>ul>li {padding-bottom: 4px; padding-top: 3px;}
+.my_show{background-color: rgba(226, 226, 226, 0.842); position: relative; width: 46%; border-radius: 8px; height: 100px; }
+.my_list{ border-radius: 10px; background-color: rgba(226, 226, 226, 0.842); width: 55%; height: 450px; position: relative; margin: 24% 0 0 20%;} 
+.my_list>h3{ margin-top:20px;}

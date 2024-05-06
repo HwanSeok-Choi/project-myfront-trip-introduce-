@@ -44,36 +44,12 @@ body{ background: #3f3f3f;margin:0;}
     left:50%;
     transform:translate(-50%, -50%);
   }
-  .text{ width:60%;  line-height:20px;margin:0 auto;}
-  
-  .icon{
-    width:30px;
-    height:30px;
-    border:1px solid lightgray;
-    border-radius:50%;
-    text-align:center;
-    cursor:pointer;
-    line-height:30px;
-    display:inline-block;
-  }
-  
-  .icon:hover{
-    background-color:#000;
-    color:white;
-  }
-  
-  .light{
-    color:#b2bec3;
-  }
-  
-  .icons{
-    text-aling:center;
-    margin-bottom:20px;
-  }
-  
-  .forgot{
-    display:none;
-  }
+  .text{ width:60%;  line-height:20px;margin:0 auto;} 
+  .icon{width:30px;height:30px;border:1px solid lightgray;border-radius:50%;text-align:center;cursor:pointer;line-height:30px;display:inline-block;}
+  .icon:hover{ background-color:#000;color:white;}
+   .light{ color:#b2bec3;}
+  .icons{ text-aling:center;margin-bottom:20px; } 
+  .forgot{  display:none;}
   
   .form{
     text-align:center;
