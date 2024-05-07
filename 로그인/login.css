@@ -1,9 +1,9 @@
 body{ background: #3f3f3f;margin:0;}
 .bold{ font-family: 'Montserrat', sans-serif;font-weight:700;font-size:25px;}
   .normal{font-family: 'Darker Grotesque', sans-serif;font-weight:500;font-size:17px;}
-  .welcome-text{ color:#3c57c2c5;}  /* 요기가 >> 환영합니다!  */
-  .welcome{text-align:center;color:hsl(0, 59%, 42%); position:absolute; height:50%; width:400px; z-index:30;} /* 요기가 >> 두번째 위치!  */
-  .hello{text-align:center; color:#f97070; position:absolute;height:50%;right:0; width:400px; z-index:30;display:none;} /* 요기가 >> 안녕하세요~ 아래 두번째 단락!  */
+  .welcome-text{ color:#000000c5;}  /* 요기가 >> 환영합니다!  */
+  .welcome{text-align:center;color:hsl(0, 0%, 0%); position:absolute; height:50%; width:400px; z-index:30;} /* 요기가 >> 두번째 위치!  */
+  .hello{text-align:center; color:#000000; position:absolute;height:50%;right:0; width:1000px; z-index:30;display:none;} /* 요기가 >> 안녕하세요~ 아래 두번째 단락!  */
   .welcome-text{margin-top:100px;}
   .move{ height:100%; position:absolute; width:400px; text-align:center; z-index:20; background-color:#C8DAFD;  /* 요기가 >> 배경  */
      background-image:url("http://www.pixmy.tech/Projects/Codepen/SlideForm/bg.jpg"); background-size:cover; background-position:left;transition:all .4s ease;
@@ -18,10 +18,10 @@ body{ background: #3f3f3f;margin:0;}
   .startForm{ animation: startForm .4s linear forwards; transition:all .4s ease-out;} 
   .p-button{  animation-iteration-count:4;  color:white;
     padding:12px 60px;
-    color:#bf4b4b;   /* 요기 버튼 글자색 */
+    color:rgb(185, 185, 185);   /* 요기 버튼 글자색 */
     font-size:14px;
     border-radius:25px;
-    border:1px solid #a54d4d; /* 버튼테두리색 */
+    border:1px solid rgb(185, 185, 185); /* 버튼테두리색 */
     width:40%;
     position:absolute;
     left:0;
@@ -33,12 +33,12 @@ body{ background: #3f3f3f;margin:0;}
     transition:all .4s ease;
   }
   
-  .p-button:hover{ transition:all .4s ease;background-color:rgba(98, 30, 30, 0.7); } /* 여기가 버튼 호버 */
+  .p-button:hover{ transition:all .4s ease;background-color:rgba(241, 241, 241, 0.7); } /* 여기가 버튼 호버 */
   h4{  font-size:22px; }
   p{  font-size:14px;}
   .container{
-    height:450px;
-    width:900px;
+    height:600px;
+    width:1200px;
     position:absolute;
     top:50%;
     left:50%;
