@@ -1,3 +1,4 @@
+/* 기본세팅 */
 * {margin: 0; padding: 0;}
 *, :after, :before {box-sizing:border-box;}
 html,body {width: 100%;height:100%;overflow-x: hidden;}
@@ -5,6 +6,8 @@ a {text-decoration:none; color:black; margin:0;}
 a:hover{color: black;text-decoration-line: underline;}
 ul, li {list-style: none;}
 table {border-collapse:collapse;border-spacing:0}
+
+/* content */
 .my_wrap{width: 1200px; margin: 0 auto;} 
 .my_top{display: flex;}
 .my_nav{border-radius:8px; background-color: rgba(226, 226, 226, 0.842); width: 175px; height: 240px;  text-align: center; position:relative; margin:180px 0 0 260px; float: left; } 
@@ -23,25 +26,24 @@ table {border-collapse:collapse;border-spacing:0}
 .my_list_ul>ul{display: flex; justify-content: space-between;}
 
 
-
-
-
 /* 요기부터 반응형 입니다 */
 
 .my_ban_top{display: none;}
 @media screen and (max-width: 1020px) {
     .my_ban_top {display: block; }
     .my_top{display: none;}
-    .my_list{border-radius: 10px; background-color: rgba(226, 226, 226, 0.842); width: 680px; height: 450px; position: relative; margin: 20px 0 0 180px;}
+    .my_list{border-radius: 10px; background-color: rgba(226, 226, 226, 0.842); width: 680px; height: 450px; position: relative; margin: 20px 0 0 160px;}
     .my_list_ul{border-bottom: 1px solid rgba(168, 168, 168, 0.898); width: 650px;  height: 35px; margin: 35px 0 0 20px; position: absolute; }
 }
 
 .ban_span{color:rgba(153, 153, 153, 0.78); margin-left: 50px; border-bottom:1px solid rgba(153, 153, 153, 0.78);}
-.my_ban_show{ margin: 50px 0 0 180px; width: 680px; height: 330px; border-radius: 13px; background-color: rgba(226, 226, 226, 0.842);}
+.my_ban_show{ margin: 50px 0 0 160px; width: 680px; height: 330px; border-radius: 13px; background-color: rgba(226, 226, 226, 0.842);}
 .my_ban_img{position: relative; top:50px; left:70px }
 .my_ban_name{ position: relative; left:250px; bottom:90px;  width: 400px;}
 .my_ban_point_text{position: relative; left:170px; top:9px; font-size: x-large;}
 .my_ban_point{position: relative; width: 370px; height: 50px; background-color: white; margin-left: 270px; bottom: 50px;}
 .my_ban_point_btn{ width: 70px; height: 25px;position: absolute; background-color: rgb(250, 250, 188); border-radius: 20px; right: 15px; top:14px;}
-.my_ban_icon>ul>li>img{width: 70px; border:1px solid black;}
+.my_ban_icon{position: absolute; margin:0 0 0 50px; width: 600px;}
+.my_ban_icon>ul>li>img{width: 70px; margin-left: 18px; }
 .my_ban_icon>ul{display: flex; justify-content: space-between;}
+.my_ban_icon>ul>li>span{ margin-left: 10px;}
