@@ -1,6 +1,6 @@
 :root{
-    --form-height:750px;
-    --form-width: 900px;
+    --form-height:600px;
+    --form-width: 1000px;
     /*  Sea Green */
     --left-color: #F9D0DF;
     /*  Light Blue  */
@@ -293,7 +293,7 @@
        clip: rect(0px, calc(var(--form-width) / 2 + 480px / 2), var(--form-height), calc(var(--form-width) / 2 - 480px / 2));
     }
     30%{
-           clip: rect(0px, var(--form-width), var(--form-height), calc(var(--form-width) - 480px));
+           clip: rect(0px, var(--form-width), var(--form-height), calc(var(--form-width) - 580px));
     }
     0%{
        clip: rect(0px, var(--form-width), var(--form-height), calc(var(--form-width) - 385px));
