@@ -1,4 +1,4 @@
-package tourprj;
+package day6;
 
 import org.springframework.stereotype.Component;
 

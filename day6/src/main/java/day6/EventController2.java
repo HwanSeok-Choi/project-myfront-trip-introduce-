@@ -1,4 +1,4 @@
-package tourprj;
+package day6;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -33,26 +33,26 @@ public class EventController2 {
         }
         
         if (month.equals("") || month.isEmpty()) {
-            // �씠�쟾�뿉 �꽑�깮�븳 �썡 媛� 媛��졇�삤湲�
+            // 이전에 선택한 월 값 가져오기
             month = (String) session.getAttribute("selectedMonth");
             if (month == null) {
-                // �씠�쟾�뿉 �꽑�깮�븳 �썡 媛믪씠 �뾾�뒗 寃쎌슦 湲곕낯媛믪쑝濡� �꽕�젙
+                // 이전에 선택한 월 값이 없는 경우 기본값으로 설정
                 month = String.format("%02d", cal.get(Calendar.MONTH) + 1);
             }
         } else {
-            // �깉濡쒖슫 �썡 媛� �꽑�깮�븳 寃쎌슦 �꽭�뀡�뿉 ���옣
+            // 새로운 월 값 선택한 경우 세션에 저장
             session.setAttribute("selectedMonth", month);
         }
         
         if (area.equals("") || area.isEmpty()) {
-            // �씠�쟾�뿉 �꽑�깮�븳 吏��뿭 肄붾뱶 媛��졇�삤湲�
+            // 이전에 선택한 지역 코드 가져오기
             area = (String) session.getAttribute("selectedArea");
             if (area == null) {
-                // �씠�쟾�뿉 �꽑�깮�븳 吏��뿭 肄붾뱶媛� �뾾�뒗 寃쎌슦 湲곕낯媛믪쑝濡� �꽕�젙
-                area = "1"; // �꽌�슱�쓣 湲곕낯媛믪쑝濡� �꽕�젙
+                // 이전에 선택한 지역 코드가 없는 경우 기본값으로 설정
+                area = "1"; // 서울을 기본값으로 설정
             }
         } else {
-            // �깉濡쒖슫 吏��뿭 肄붾뱶 �꽑�깮�븳 寃쎌슦 �꽭�뀡�뿉 ���옣
+            // 새로운 지역 코드 선택한 경우 세션에 저장
             session.setAttribute("selectedArea", area);
         }
 

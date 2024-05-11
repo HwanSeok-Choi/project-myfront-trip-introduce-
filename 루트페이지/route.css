@@ -1,0 +1,34 @@
+/* 기본세팅 */
+* {margin: 0; padding: 0;}
+*, :after, :before {box-sizing:border-box;}
+html,body {width: 100%;height:100%;overflow-x: hidden;}
+a {text-decoration:none; color:black; margin:0;}
+a:hover{color: black;text-decoration-line: underline;}
+ul, li {list-style: none;}
+table {border-collapse:collapse;border-spacing:0}
+/* content */
+.rt_wrap{width: 1200px; margin: 0 auto;}
+.rt_h3{ margin-left: 550px;}
+.rt_top{margin:100px 0 0 140px; width: 1000px; height: 330px;}
+.rt_top_left{float: left; border:1px solid black; background-color: gray; width: 370px ; height: 290px; margin:20px 0 0 50px;}
+.rt_top_right{float: right;  margin:40px 135px 0 0}
+.rt_input1{margin-bottom: 25px;}
+.rt_input1>p{font-size: larger; font-weight:bold; text-align: center; }
+.rt_input1>p>input{width: 280px; height: 35px; border-radius: 5px; border:1px solid rgb(164, 164, 164)}
+
+/* 중간 */
+.rt_middle{border: 1px solid black; border-radius: 15px; height: 800px; width: 1200px; }
+#rt_map{border-radius: 10px; background-color: blue; width: 650px; height:350px; float: left; margin:50px 0 0 30px; }
+#rt_mapinfo{border-radius: 10px; background-color: rgb(18, 18, 87); width: 440px; height:300px;float: right; margin: 55px 35px 0 0; border: 1px solid black;}
+#rt_map_under{border-radius: 10px;  background-color: rgb(160, 160, 240); width: 800px; height:250px; margin:50px 0 0 30px; float: left;}
+.rt_mid_btn{ position: relative; height: 45px; width: 300px; float: right; top: 250px;}
+.rt_mid_btn>button{width: 100px; height: 35px;  margin-right: 10px; background-color: cadetblue;}
+
+/* 총평 */
+.rt_gun_h4{font-size: 800; margin: 50px 0 0 30px; font-weight: bold;}
+.rt_gun{border:1px solid; width: 1150px ; height: 300px; margin:40px 0 0 30px; background-color: rgb(202, 120, 120); border-radius: 8px;}
+.rt_btn{margin: 20px 0 0 480px; width: 300px;  height: 60px;}
+.rt_btn>button{width: 130px; height: 40px; margin-right: 10px; }
+.rt_btn1{background-color: black; color:white;}
+.rt_btn2{background-color: white; color:black;}
+.rt_alltext>input{width: 1150px; height: 300px;}
