@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포인트 전체 내역</title>
+    <link rel="stylesheet" type="text/css" href="point.css" />
+</head>
+<body>
+    <div class="pt_wrap">
+        <!-- 왼쪽 네비 위-->
+        <div class="pt_nav">
+            <div class="pt_nav_up">
+                <div class="pt_nav"></div>
+                <div class="pt_nav_h2"><h2>닉네임 자리</h2></div>
+                <div class="pt_nav_pt"><span>포인트</span> <span style="color:red;">99,123</span></div>
+                <input type="button" value="충전하기" class="pt_btn">
+            </div>
+            <div class="pt_nav_down">
+                <div class="pt_nav_char"><h1>충전하기</h1></div>
+                <div class="pt_nav_all"><h1>전체내역</h1>
+                    <br><p>사용내역</p>
+                    <p>획득내역</p>
+                    <p>충전/환전</p>
+                </div>
+            </div>
+        </div>
+        <div class="pt_content">
+            <div class="pt_title">포인트 전체내역</div>
+            <div class="pt_categori">
+                <div class="pt_date1"></div>
+                <div class="pt_date2"></div>
+                <input class="pt_search" placeholder="    사용내역을 입력하세요"></input>
+                <button class="pt_cont_btn">검색</button>
+            </div>
+
+            <table class="pt_table" border="1" >
+                <thead>
+                    <tr style="background-color: rgb(163, 163, 163); ">
+                        <th>날짜</th>
+                        <th>사용구분</th>
+                        <th>내역</th>
+                        <th>사용 포인트</th>
+                        <th>잔여 포인트</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- 정보가 들어오는 부분 -->
+                    <tr class="pt_table_info">
+                        <td id="t_date"> 정보:</td>
+                        <td id="t_division">사용구분:</td>
+                        <td id="t_list">내역정보</td>
+                        <td id="t_use_point">6p</td>
+                        <td id="t_left_point">5p</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="5" >합계    <span style="padding-left: 300px;">39,102</span> </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
