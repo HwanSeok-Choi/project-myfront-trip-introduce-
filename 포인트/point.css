@@ -18,7 +18,7 @@ table {border-collapse:collapse;border-spacing:0}
 .pt_nav_all>h1{padding-top: 30px;}
 .pt_nav_all>p{padding-bottom: 5px; font-weight: bold; color:rgb(182, 181, 181); padding-left: 10px;}
  
-.pt_content{float:right; position: relative; right: 400px; top:300px;}
+.pt_content{float:right; position: relative; right:60px; top:300px;}
 .pt_title{font-size: xx-large;}
 
 .pt_date1{border:2px solid black; width: 100px; height: 50px; position: absolute; margin-top: 60px;} 
@@ -29,4 +29,8 @@ table {border-collapse:collapse;border-spacing:0}
 .pt_table{ position: relative; top:180px; border:1px solid  black; }
 .pt_table>tr>th{border-right:1px solid rgb(0, 0, 0);}
 
-.pt_table_info>td{padding-right: 10px;}
+.pt_table_info>td{text-align: center; height: 50px;}
+
+#t_date{width: 120px;}
+#t_division{width: 80px;}
+#t_list{width: 350px; }
