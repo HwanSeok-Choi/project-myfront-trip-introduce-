@@ -1,0 +1,42 @@
+/* 기본세팅 */
+* {margin: 0; padding: 0;}
+*, :after, :before {box-sizing:border-box; }
+html,body {width: 100%;height:100%;overflow-x: hidden;}
+a {text-decoration:none; color:black; margin:0;}
+a:hover{color: black;text-decoration-line: underline;}
+ul, li {list-style: none;}
+table {border-collapse:collapse;border-spacing:0}
+/* 시작 */
+.ptc_wrap{width: 1100px;  height: 100%; margin: 0 auto; border:1px solid black;}
+.ptc_header{border-top: 3px solid black; border-bottom: 3px solid black;  height: 150px; margin-top: 100px;}
+.ptc_h3{float: left; margin: 65px 0 0 100px; }
+.ptc_point{float: left; width: 100px; height: 40px;  margin:60px 0 0 500px; text-align: center;}
+.ptc_btn{ float: right;  margin:65px 80px 0 0;}
+.ptc_btn>button{background-color: black; color:white; width: 100px; height: 30px;}
+
+
+.ptc_content{float:left; position: relative; left:100px; top:100px;}
+.ptc_title{font-size: xx-large;}
+
+.ptc_date1{border:2px solid black; width: 150px; height: 50px; position: absolute; margin-top: 60px;} 
+.ptc_date2{border:2px solid black; width: 150px; height: 50px; position: absolute; margin:60px 0 0 165px;} 
+.ptc_search{border:2px solid black; width: 400px; height: 50px; position: absolute; margin:60px 0 0 330px} 
+.ptc_cont_btn{background-color: black; color:white; position: absolute; margin:60px 0 0 750px; width: 130px; height: 50px;}
+
+
+/* 모달 */
+
+
+.modal{ position:fixed; width:900px; height: 600px; display: none; align-items: center; justify-content: center; top:100px;
+ background-color:#f2f2f2; border-radius: 20px; box-shadow:inset 0 0 5px rgba(0,0,0,0.27), 0 2px 8px rgba(0,0,0,0.7); z-index: 1;}
+button:focus{outline: none; box-shadow: inset 0 0 10px rgba(0,0,0,0.1); }
+.md_h1{ border-bottom:2px solid black; width: 1300px; height: 40px; border:1px solid black;  position: relative; bottom:190px; left:200px;}
+.md_btn{position: relative; border:1px solid black; bottom:80px; width: 100px; height: 100px; right:120px; }
+.md_btn1{width: 250px; height: 40px;}
+.md_btn2{width:250px; height: 40px;}
+
+
+
+/* 모달 전체 */
+.modalhtml{background-color: rgba(0,0,0,0.4);}
+.modalhtml2{background-color: white;}
