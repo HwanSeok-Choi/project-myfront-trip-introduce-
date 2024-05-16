@@ -33,5 +33,7 @@ document.querySelector('.modal_closeBtn').addEventListener('click', function () 
   document.documentElement.classList.add("modalhtml2");
 });
 
-
+document.querySelector('.md_btn1').addEventListener('click', function () {
+document.getElementById('md_btn1').style.backgroundColor ='blue';
+});
 
