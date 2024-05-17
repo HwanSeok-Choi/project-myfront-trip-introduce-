@@ -9,11 +9,11 @@
 <body>
     <div class="idfg_wrap">
         <div class="idfg_h2">
-            <div class="idfg_h2_1" id="idfg">개인회원 아이디 찾기</div>
-            <div class="idfg_h2_2" id="pwfg">회원 비밀번호 찾기</div>
+            <div class="idfg_h2_1" id="idfg" data-form="form1">개인회원 아이디 찾기</div>
+            <div class="idfg_h2_2" id="pwfg" data-form="form2">회원 비밀번호 찾기</div>
         </div>
         <!-- 로그인찾기 -->
-        <form class="idfg_form"> 
+        <form class="idfg_form" id="form1"> 
             <div class="idfg_p">
                 <p>회원정보에 등록된 정보로 아이디를 찾을 수 있습니다.</p>
             </div>
@@ -24,7 +24,7 @@
                     </div> 
                     <div class="idfg_phone">
                         <div class="idfg_sub2">휴대폰번호</div>
-                        <div class="idfg_input2"><input type="text" placeholder=" '-' 없이 입력"><button class="idfg_phone_btn">인증번호 발송</button></div>
+                        <div class="idfg_input2"><input type="text" placeholder="     ' - ' 없이 입력"><button class="idfg_phone_btn">인증번호 발송</button></div>
                         
                     </div>
                     <div class="idfg_number">
@@ -36,8 +36,33 @@
             <button class="idfg_form_btn">인증확인</button>
         </form>
         <!-- 비밀번호 찾기 -->
+        <form class="idfg_form"  id="form2"> 
+            <div class="pwfg_p">
+                <p>아이디와 회원정보에 등록된 정보로 비밀번호를 찾을 수 있습니다.</p>
+            </div>
+            <ul class="idfg_ul">
+                <div class="idfg_ID">
+                    <div class="idfg_sub1">아이디</div>
+                    <div class="idfg_input3"><input type="text" ></div>
+                </div>
+                    <div class="idfg_name">
+                        <div class="idfg_sub2" style="padding-right: 85px;">이름</div>
+                        <div class="idfg_input1"><input type="text" ></div>
+                    </div> 
+                    <div class="idfg_phone">
+                        <div class="idfg_sub3">휴대폰번호</div>
+                        <div class="idfg_input2"><input type="text" placeholder="     ' - ' 없이 입력"><button class="idfg_phone_btn">인증번호 발송</button></div>
+                        
+                    </div>
+                    <div class="idfg_number">
+                        <div class="idfg_sub4" >인증번호</div>
+                        <div class="idfg_input3"><input type="text" ></div>
+                    </div>
+            </ul>
 
-        
+            <button class="idfg_form_btn">인증확인</button>
+        </form>
     </div>
+    <script src="idforget.js"></script>
 </body>
 </html>

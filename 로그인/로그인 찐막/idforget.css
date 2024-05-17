@@ -15,13 +15,18 @@ a:hover{color: black;text-decoration-line: underline;}
 ul, li {list-style: none;}
 table {border-collapse:collapse;border-spacing:0}
 
-/* 개인회원아이디 찾기 css */
+/* 개인회원아이디 찾기 form */
 /* content */
-.idfg_wrap{width: 1100px; margin: 0 auto; border:1px solid black; border-bottom: none; height: 100%; text-align: center; } 
-.idfg_form{border: 1px solid black; border-top: none; margin-top: 300px; height: 700px; padding-top: 70px;}
+.idfg_wrap{width: 1100px; margin: 0 auto; border:1px solid rgb(255, 255, 255);  height: 100%; text-align: center; } 
+.idfg_form{border: 1px solid black; border-top: none; height: 700px; padding-top: 60px; margin-top: 300px;
+display: none;}
 
-.idfg_h2_1{border-top:1px solid black; ;  border-left:1px solid black;  width: 549px; height: 50px; text-align:center; padding-top: 10px; float: left; margin-top: 250px; }
-.idfg_h2_2{border:1px solid black; width: 549px; height: 50px; text-align:center; float: right; padding-top: 10px; margin-top: 250px;}
+.idfg_form.active {display: block; /* 활성화된 폼만 표시 */}
+
+.idfg_h2_1.active{font-weight: bolder;}  
+.idfg_h2_2.active{font-weight: bolder;}
+.idfg_h2_1{border-top:1px solid black; ;  border-left:1px solid black;  width: 549px; height: 50px; text-align:center; padding-top: 10px; float: left; margin-top: 250px;  cursor: pointer;transition: all 0.3s; }
+.idfg_h2_2{border:1px solid black; width: 549px; height: 50px; text-align:center; float: right; padding-top: 10px; margin-top: 250px; cursor: pointer;transition: all 0.3s;}
 
 .idfg_p>p{ font-weight: bolder; width: 450px; margin:100px 0 50px 100px}
 .idfg_name{ height: 80px;width: 900px;}
@@ -44,4 +49,14 @@ table {border-collapse:collapse;border-spacing:0}
 .idfg_input3>input{width: 400px;height: 45px;  float: left; margin:17px 0 0 40px; border:0.2px solid rgba(143, 143, 143, 0.788);}
 
 .idfg_phone_btn{ width: 130px; height: 45px; color:white; margin:17px 70px 0 0; font-weight: bold; font-size:medium; background-color: rgba(128, 128, 128, 0.555); border:0.2px solid rgb(117, 116, 116);} 
-.idfg_form_btn{width: 250px ; height: 70px; background-color: rgba(0, 0, 253, 0.61); color:white; font-weight: bold; font-size: larger; margin-top: 40px; }
+.idfg_form_btn{width: 250px ; height: 70px; background-color: rgba(0, 0, 253, 0.61); color:white; font-weight: bold; font-size: larger; margin-top: 40px;}
+
+.idfg_phone_btn:hover{cursor: pointer;}
+.idfg_form_btn:hover{cursor: pointer;}
+
+/* 회원 비밀번호 찾기 form */
+
+.pwfg_p>p{ font-weight: bolder; width: 550px; margin:50px 0 50px 100px;}
+.idfg_ID{height: 80px;width: 900px;}
+.idfg_sub4{background-color: #c0bfbf67; width: 220px; height: 80px; padding: 25px 55px 0 0; float: left; font-size: large;} 
+
