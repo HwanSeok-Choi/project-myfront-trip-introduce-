@@ -36,5 +36,6 @@ table {border-collapse:collapse;border-spacing:0}
 .pt_table_info>td{text-align: center; height: 50px;}
 
 #t_date{width: 140px;}
-#t_division{width: 90px;}
-#t_list{width: 370px; }
+#t_list{width: 430px; }
+#t_use_point{width: 100px;}
+#t_left_point{width: 100px;}

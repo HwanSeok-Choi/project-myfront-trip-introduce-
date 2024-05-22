@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포인트 충전</title>
+    <link rel="stylesheet" href="pointcharge.css">
+</head>
+<body>
+
+    <!-- 본문 --> 
+    <div class="ptc_wrap">
+         <!-- 왼쪽 네비 위-->
+ <div class="pt_nav">
+    <div class="pt_nav_up">
+        <div class="pt_nav"></div>
+        <div class="pt_nav_h2"><h2>닉네임 자리</h2></div>
+        <div class="pt_nav_pt"><span>포인트</span> <span style="color: rgba(253, 177, 177, 0.924);">99,123</span></div>
+    </div>
+    <div class="pt_nav_down">
+        <div class="pt_nav_char"><h1>전체내역</h1>
+         <a href="#"> <p>사용내역</p> </a>
+         <a href="#"> <p>획득내역</p> </a>
+        </div>
+        <div class="pt_nav_all"><h1>충전/환전</h1>
+        <a href="pointchar.html"> <p>충전하기</p></a>
+        <a href="#"> <p>환전하기</p></a>
+        </div>
+    </div>
+</div>
+<!-- 나의포인트 -->
+        <div class="ptc_header" id="content1">
+            <div class="ptc_h3"><h3>xxxxx님의 보유 포인트</h3></div>
+            <div class="ptc_point"> <span style="font-size:x-large; color:blue; ">20,102</span></div>
+           <div class="ptc_btn"><button class="open" id="openModal">포인트 충전 </button></div>  
+        </div>
+
+        <div class="ptc_content" id="content2">
+            <div class="ptc_title">포인트 충전 내역</div>
+            <div class="ptc_categori">
+                <div class="ptc_date1"></div>
+                <div class="ptc_date2"></div>
+                <input class="ptc_search" placeholder="    사용내역을 입력하세요"></input>
+                <button class="ptc_cont_btn">검색</button>
+            </div>
+
+<!-- 테이블 -->
+<table class="pt_table" border="1" >
+    <thead>
+        <tr style="background-color: rgb(201, 201, 201); ">
+            <th>날짜</th>
+            <th>내역</th>
+            <th>충전 포인트</th>
+            <th>잔여 포인트</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- 정보가 들어오는 부분 -->
+        <tr class="pt_table_info">
+            <td id="t_date"> 2024-05-19</td>
+            <td id="t_list">5000원 충전</td>
+            <td id="t_use_point">12121p</td>
+            <td id="t_left_point">17121p</td>
+        </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4" > <span style="margin-left: 42px;">합계 </span>  <span style="float: right; color:red; margin-right: 20px;">39,102</span> </td>
+            </tr>
+        </tfoot>
+</table>
+
+    <!-- 모달 -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="tab-container">
+                <div id="tab1" class="tab selected">충전 포인트 선택</div>
+                <div id="tab2" class="tab">결제 수단 선택</div>
+            </div>
+            <form id="form1" class="form">
+                <div class="point-selection">
+                    <label for="points" class="points-label">보유 포인트: 0p</label>
+                    <div class="points">
+                        <input type="radio" id="1000p" name="point" value="1000">
+                        <label for="1000p" class="point-btn">1000p</label>
+                        <input type="radio" id="5000p" name="point" value="5000">
+                        <label for="5000p" class="point-btn">5000p</label>
+                        <input type="radio" id="10000p" name="point" value="10000">
+                        <label for="10000p" class="point-btn">10,000p</label>
+                        <input type="radio" id="50000p" name="point" value="50000">
+                        <label for="50000p" class="point-btn">30,000p</label>
+                        <input type="radio" id="100000p" name="point" value="100000">
+                        <label for="100000p" class="point-btn">50,000p</label>
+                        <input type="radio" id="300000p" name="point" value="300000">
+                        <label for="300000p" class="point-btn">100,000p</label>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button type="button" class="btn" id="cancel">취소</button>
+                    <button type="button" class="btn" id="next">다음</button>
+                </div>
+            </form>
+            <form id="form2" class="form" style="display: none;">
+                <div class="payment-method">
+                    <label for="payment">결제 수단을 선택하세요:</label>
+                    <div class="payment-options">
+                        <div class="payment-row">
+                            <input type="radio" id="credit" name="payment" value="credit">
+                            <label for="credit" class="payment-btn">
+                                <img src="credit-card.png" alt="Credit Card">
+                                신용카드 결제
+                            </label>
+                            <input type="radio" id="bank" name="payment" value="bank">
+                            <label for="bank" class="payment-btn">
+                                <img src="bank-transfer.png" alt="Bank Transfer">
+                                무통장입금
+                            </label>
+                        </div>
+                        <div class="payment-row">
+                            <input type="radio" id="phone" name="payment" value="phone">
+                            <label for="phone" class="payment-btn">
+                                <img src="mobile-payment.png" alt="Mobile Payment">
+                                휴대폰 결제
+                            </label>
+                            <input type="radio" id="simple" name="payment" value="simple">
+                            <label for="simple" class="payment-btn">
+                                <img src="simple-payment.png" alt="Simple Payment">
+                                간편결제
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button type="button" class="btn" id="cancel">취소</button>
+                    <button type="button" class="btn" id="back">이전</button>
+                    <button type="submit" class="btn">완료</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="pointchar.js"></script>
+</body>
+</html>

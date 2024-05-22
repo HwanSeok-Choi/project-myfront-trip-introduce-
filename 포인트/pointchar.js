@@ -1,39 +1,51 @@
-
-/*  
-const open = document.querySelector(".open");
-const close = document.querySelector(".modal_closeBtn");
-const modal = document.querySelector(".modal");
-
 document.addEventListener("DOMContentLoaded", function() {
+    // 페이지 로드 시 모달이 자동으로 열리지 않도록 설정
+    document.getElementById('modal').style.display = 'none';
+
+    // 모달 열기 버튼에 클릭 이벤트 핸들러 등록
+    document.getElementById('openModal').onclick = function() {
+        document.getElementById('modal').style.display = 'flex';
+        resetForms();
+    };
+
+    // 다음 버튼에 클릭 이벤트 핸들러 등록
+    document.getElementById('next').onclick = function() {
+        document.getElementById('form1').style.display = 'none';
+        document.getElementById('form2').style.display = 'block';
+        document.getElementById('tab1').classList.remove('selected');
+        document.getElementById('tab2').classList.add('selected');
+    };
+
+    // 뒤로 가기 버튼에 클릭 이벤트 핸들러 등록
+    document.getElementById('back').onclick = function() {
+        document.getElementById('form2').style.display = 'none';
+        document.getElementById('form1').style.display = 'block';
+        document.getElementById('tab2').classList.remove('selected');
+        document.getElementById('tab1').classList.add('selected');
+    };
+
+    // 취소 버튼에 클릭 이벤트 핸들러 등록
+    document.querySelectorAll('#cancel').forEach(btn => {
+        btn.onclick = function() {
+            document.getElementById('modal').style.display = 'none';
+            resetForms(); // 취소 버튼을 누를 때 초기화
+            document.querySelectorAll('input[type="radio"]').forEach(radio => {
+                radio.checked = false;
+            });
+        }
+    });
+
     
-    modal.classList.add("hidden");
-    open.addEventListener("click", function(){
-        modal.classList.add("modal");
-    });
-    close.addEventListener("click", function(){
-        modal.classList.remove("modal");
-    });
+
+
+    // 폼 초기화 함수 호출
+    resetForms();
 });
 
-init();
-*/
+function resetForms() {
+    document.getElementById('form1').style.display = 'block';
+    document.getElementById('form2').style.display = 'none';
+    document.getElementById('tab1').classList.add('selected');
+    document.getElementById('tab2').classList.remove('selected');
 
-
-
-// 모달 열기 버튼에 대한 이벤트 리스너 추가
-document.getElementById('jsBtn').addEventListener('click', function () {
-  document.getElementById('modalID').style.display = 'flex';
-  document.documentElement.classList.add("modalhtml");
-  document.documentElement.style.overflow = 'hidden';
-});
-
-// 닫기 버튼에 대한 이벤트 리스너 추가
-document.querySelector('.modal_closeBtn').addEventListener('click', function () {
-  document.getElementById('modalID').style.display = 'none';
-  document.documentElement.classList.add("modalhtml2");
-});
-
-document.querySelector('.md_btn1').addEventListener('click', function () {
-document.getElementById('md_btn1').style.backgroundColor ='blue';
-});
-
+}
